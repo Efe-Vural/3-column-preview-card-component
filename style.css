@@ -1,0 +1,141 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,.btn{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #fff;
+}
+.container{
+    display: flex;
+    padding: 1.5em;
+    align-items: center;
+    justify-content: center;   
+    margin: auto; 
+
+    
+}
+.card{
+    padding: 40px;
+    max-width: 300px;
+    min-height: 500px;
+    position: relative;
+    
+
+   
+}
+.btn{
+    
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    
+    
+}
+
+
+
+
+.sedan .btn{
+    color: var(--bright-orange);
+    
+}
+
+.suv .btn{
+    color: var(--dark-cyan);
+}
+
+.lux .btn{
+    color: var(--very-dark-cyan);
+    
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.card img{
+    margin-bottom: 30px;
+}
+
+h3{
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sedan{
+    background-color: var(--bright-orange);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.suv{
+    background-color: var(--dark-cyan);
+
+}
+
+.lux{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0px 10px 10px 0px;
+}
+
+p{
+    font-size: 15px;
+    line-height: 2;
+    
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    color: black;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+
+ }
+
+ @media (min-width: 992px){
+    .container{
+        display: flex;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        
+    }
+
+ }
+ @media (max-width: 375px){
+    .container{
+        flex-direction: column;
+
+    }
+
+    .sedan{
+        border-radius: 0px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .lux{
+        border-radius: 0px;
+        border-radius: 0px 0px 10px 10px;
+    }
+ }
